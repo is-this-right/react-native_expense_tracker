@@ -21,10 +21,11 @@ export default function Add_Item() {
                     <View style={styles.form_row}>
                          <Text style={styles.form_rowLabel}>Category</Text>
                          <Dropdown
+                              placeholderStyle={styles.dropdown_placeholder}
                               style={styles.input}
                               data={listed_categories}
-                              selectedTextStyle={styles.dropdown_selected}
-                              inputSearchStyle={styles.dropdown_inputSearch}
+                              selectedTextStyle={styles.dropdown}
+                              // inputSearchStyle={styles.dropdown_inputSearch}
                               labelField="label"
                               valueField="value"
                               onChange={setCategory}
@@ -96,8 +97,11 @@ const styles = StyleSheet.create({
           //   padding: 4px 20px 0,
           //   width: 100%
      },
-     dropdown_selected: {
+     dropdown: {
           color: "#eee",
+     },
+     dropdown_placeholder: {
+          color: "#0059b3"
      },
      dropdown_inputSearch: {
           color: "#0059b3",
