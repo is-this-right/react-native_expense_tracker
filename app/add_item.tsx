@@ -2,6 +2,8 @@ import { router } from "expo-router";
 import { useState } from "react";
 import { Button, StyleSheet, Text, TextInput, View } from "react-native";
 import { Dropdown } from "react-native-element-dropdown";
+import { add_expense, init_db } from "@/scripts/db";
+
 
 const listed_categories = [
      { label: "Food", value: "Food" },
@@ -61,8 +63,11 @@ export default function Add_Item() {
                          ></TextInput>
                     </View>
                     <View style={styles.form_row}>
-                         <Button title="Add"></Button>
-                         <Button title="Back" onPress={() => router.dismissAll()}/>
+                         <Button title="Add" onPress={() => {
+                              add_expense(category.value, item, Number(price))
+                              router.navigate("/")
+                         }}></Button>
+                         <Button title="Back" onPress={() => router.navigate("/")}/>
                     </View>
                </View>
           </View>
