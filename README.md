@@ -1,50 +1,17 @@
-# Welcome to your Expo app 👋
+# Expo Reac Native Expense Tracker
+___  
+Simple expense tracker to track expenses for the day. Currently working on CRUD functions. I am planning to explore ways to present my spending in a meaningful way. It should be able to generate reports in the future.
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
-
-## Get started
-
-1. Install dependencies
-
-   ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-    npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+TO-DO List:
+- [x] Create landing page
+- [x] Initialize table
+- [x] Landing page displays table data
+- [x] Create "add expense" form
+- [ ] Fix database for date
+- [ ] Modify database to set category as a foreign key. Update dropdown in "add expense" form
+- [ ] Create page to display expenses for the day only
+- [ ] Update info of current expenses
+- [ ] Page re-renders on update
+- [ ] Sort expenses based on latest, category, price
+- [ ] Create reports of spending
+- [ ] Work on app aesthetics
