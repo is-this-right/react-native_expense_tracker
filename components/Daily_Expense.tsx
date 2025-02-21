@@ -4,7 +4,6 @@ type ExpenseProps = {
      item: string;
      category: string;
      price: any;
-     date_of_purchase: string;
 };
 
 export default function Expense(props: ExpenseProps) {
@@ -19,9 +18,6 @@ export default function Expense(props: ExpenseProps) {
                     </View>
                     <View style={styles.details}>
                          <Text>{props.price}</Text>
-                    </View>
-                    <View style={styles.details}>
-                         <Text>{props.date_of_purchase}</Text>
                     </View>
                </View>
           </>

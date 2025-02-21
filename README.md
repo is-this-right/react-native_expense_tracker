@@ -7,9 +7,9 @@ TO-DO List:
 - [x] Initialize table
 - [x] Landing page displays table data
 - [x] Create "add expense" form
-- [ ] Fix database for date
+- [x] Fix database for date
 - [ ] Modify database to set category as a foreign key. Update dropdown in "add expense" form
-- [ ] Create page to display expenses for the day only
+- [x] Create page to display expenses for the day only
 - [ ] Update info of current expenses
 - [ ] Page re-renders on update
 - [ ] Sort expenses based on latest, category, price
